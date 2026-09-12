@@ -24,6 +24,26 @@
     .contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-box{background:#fffdf8;border:1px solid #e5dcc9;border-radius:18px;padding:28px}.contact a{color:var(--green);font-weight:700;text-decoration:none}
     footer{background:#102f28;color:#eee7d7;text-align:center;padding:30px 6%;font-family:Arial,sans-serif;font-size:13px}
     @media(max-width:760px){nav{padding:9px 4%}nav img{height:48px}nav .links{display:none}.about,.contact{grid-template-columns:1fr}.hero{min-height:70vh;padding-top:45px}}
+  .gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  margin-top:35px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:14px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.15);
+  transition:transform 0.3s ease;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.03);
+}
+  
   </style>
 </head>
 <body>
@@ -107,7 +127,21 @@
     </div>
   </div>
 </section>
+<section id="gallery">
+  <h2 class="section-title">Our Henna Gallery</h2>
+  <p class="section-sub">A glimpse of our beautiful henna designs</p>
 
+  <div class="gallery-grid">
+    <img src="WhatsApp Image 2026-05-30 at 5.54.46 PM (1).jpeg" alt="Henna Design">
+    <img src="WhatsApp Image 2026-05-30 at 5.54.46 PM.jpeg" alt="Henna Design">
+    <img src="WhatsApp Image 2026-05-30 at 5.57.03 PM.jpeg" alt="Henna Design">
+    <img src="WhatsApp Image 2026-05-30 at 5.57.04 PM (2).jpeg" alt="Henna Design">
+    <img src="WhatsApp Image 2026-05-30 at 5.57.04 PM.jpeg" alt="Henna Design">
+    <img src="WhatsApp Image 2026-05-30 at 5.58.49 PM (2).jpeg" alt="Henna Design">
+    <img src="WhatsApp Image 2026-05-30 at 5.58.49 PM (3).jpeg" alt="Henna Design">
+    <img src="WhatsApp Image 2026-05-30 at 5.58.49 PM.jpeg" alt="Henna Design">
+  </div>
+</section>
 <footer>
   © 2026 Almas Henna Artist • Dubai, UAE • 25+ Years Experience
 </footer>
