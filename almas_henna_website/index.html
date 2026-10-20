@@ -24,6 +24,18 @@
     .contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-box{background:#fffdf8;border:1px solid #e5dcc9;border-radius:18px;padding:28px}.contact a{color:var(--green);font-weight:700;text-decoration:none}
     footer{background:#102f28;color:#eee7d7;text-align:center;padding:30px 6%;font-family:Arial,sans-serif;font-size:13px}
     @media(max-width:760px){nav{padding:9px 4%}nav img{height:48px}nav .links{display:none}.about,.contact{grid-template-columns:1fr}.hero{min-height:70vh;padding-top:45px}}
+
+/* Selected customer reviews */
+#reviews{scroll-margin-top:95px}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.review-card{background:#fffdf8;border:1px solid #e5dcc9;border-radius:18px;padding:24px;box-shadow:0 8px 25px rgba(40,30,15,.06);display:flex;flex-direction:column}
+.review-stars{color:#b48632;font-size:23px;letter-spacing:2px;line-height:1.3}
+.review-card h3{color:#183f35;font-size:19px;margin:12px 0 8px}
+.review-card p{font:15px/1.75 Arial,sans-serif;color:#504b44;white-space:pre-line;flex:1;margin:0 0 16px}
+.review-source{font:12px Arial,sans-serif;color:#716a60}
+.reviews-actions{text-align:center;margin-top:30px}
+@media(max-width:900px){.reviews-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.reviews-grid{grid-template-columns:1fr}.review-card{padding:22px}}
   </style>
 
 
@@ -50,7 +62,7 @@
 <nav>
   <a href="#home"><img src="assets/almas-logo.png" alt="Almas Henna Artist logo"></a>
   <div class="links">
-    <a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#events">Events</a><a href="#contact">Contact</a>
+    <a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#events">Events</a><a href="#contact">Contact</a>
   </div>
 </nav>
 
@@ -114,6 +126,19 @@
 <img src="../WhatsApp Image 2026-05-30 at 5.58.49 PM (3).jpeg" alt="Henna design by Almas Henna Artist Dubai" style="width:100%;height:300px;object-fit:cover;border-radius:15px;">
 <img src="../WhatsApp Image 2026-05-30 at 5.58.49 PM - Copy.jpeg" alt="Henna design by Almas Henna Artist Dubai" style="width:100%;height:300px;object-fit:cover;border-radius:15px;">
   </div>
+</section>
+<section id="reviews" aria-labelledby="reviews-title">
+  <h2 class="section-title" id="reviews-title">What Our Clients Say</h2>
+  <p class="section-sub">Selected 5-star reviews shared by our clients on Google Maps.</p>
+  <div class="reviews-grid">
+    <article class="review-card"><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><h3>Puneet Gandhi</h3><p>She’s fab! Really kind and has the right energy especially around your big day! Highly recommend - especially for intricate designs.</p><span class="review-source">Customer review on Google Maps</span></article>
+    <article class="review-card"><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><h3>Shaikh Ishrat</h3><p>Absolutely loved the henna service by Almas Henna and her team I have been getting my henna done by her for over 20 years❤️ the designs were beautiful, detailed and exactly what I wanted. The whole team was professional, friendly and did amazing job. Highly recommend✨ 💗</p><span class="review-source">Customer review on Google Maps</span></article>
+    <article class="review-card"><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><h3>chhaya bangur</h3><p>She’s the best henna artist I have come across!! She has a very dedicated n professional team, who do a wonderful work!! She was the Heena artist for my daughter’s wedding (bridal)❤️ Know her since more than 3 decades!! All the best always 💥 Hard work pays off Almas 🤗</p><span class="review-source">Customer review on Google Maps</span></article>
+    <article class="review-card"><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><h3>Dhruvi Jain</h3><p>Almas is a great professional henna artist &amp; she is amazing with her work. Her team is hard working &amp; neat with their work too. Been associated with her since years &amp; since the last 2-3 years have been hiring her services for family &amp; relatives too. It is always a good experience with her.</p><span class="review-source">Customer review on Google Maps</span></article>
+    <article class="review-card"><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><h3>Shaikh Ayesha</h3><p>I had the best experience with almas and team . Very professional..i had my preference and they were outstanding they did the great job doing it . I would definitely recommend to my friends and family</p><span class="review-source">Customer review on Google Maps</span></article>
+    <article class="review-card"><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><h3>Sharmeen Shaikh</h3><p>✨ Absolutely in love with my bridal henna! ✨ The designs were so beautiful, detailed, and exactly what I had imagined for my wedding day. 💗 The artist was so patient, professional, and made the whole experience so comfortable and special. The finishing and detailing were just perfect, and the colour came out gorgeous! 😍 I received so many compliments on my mehndi. Thank you for making my bridal henna even more beautiful and memorable. Highly recommended! 💗 ✨Almas Henna Artist</p><span class="review-source">Customer review on Google Maps</span></article>
+  </div>
+  <div class="reviews-actions"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Almas%20Henna%20Artist%20Dubai" target="_blank" rel="noopener noreferrer">View Reviews on Google ↗</a></div>
 </section>
 <section id="about" class="band">
   <div class="about">
